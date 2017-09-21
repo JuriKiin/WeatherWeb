@@ -3,8 +3,17 @@ body{
     padding:0;
 }
 
+/* Colors */
+.yellow{
+    color:#FAF33E;
+}
+/*-----------------*/
+
 .header-font{
     font-family: 'Open Sans', sans-serif;
+}
+.text-font{
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Start of framework classes */

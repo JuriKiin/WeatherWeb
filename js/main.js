@@ -71,7 +71,7 @@
         //Set main data
         var temp = document.querySelector('#temp').innerHTML = parseInt(main.temp);
         //Set secondary info
-        var wind = document.querySelector('#windSpeed').innerHTML = wind.speed + 'm/h';
+        var wind = document.querySelector('#windSpeed').innerHTML = wind.speed + 'mph';
         var humidity = document.querySelector('#humidity').innerHTML = main.humidity + '%';
         var uv = document.querySelector('#visibility').innerHTML = visibility + 'm';
         var pressure = document.querySelector('#pressure').innerHTML = main.pressure + ' hPa';

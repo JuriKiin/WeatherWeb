@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/kiinStyle.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -16,21 +17,21 @@
 
     <div class='header-full'>
         <div class='header-left'>
-            <h1 class='header-title white header-font'><span style='color:#FAF33E;'>Weather Now</span><i class="fa fa-sun-o" style='padding-left:10px' aria-hidden="true"></i></h1>
+            <h1 class='header-title white header-font'><span class='yellow'>Weather Now</span><i class="fa fa-tint float" style='padding-left:10px' aria-hidden="true"></i></h1>
         </div>
         <div class='header-right'>
             <!-- Set the content of this header in js (location)-->
-            <h1 id='loc' class='header-title white'>Current Location: <span id='loc'>Quincy, MA</span></h1>
+            <h1 id='loc' class='header-title white text-font link'><span onclick='openAbout()' class='yellow font-md link-any'>About</span></h1>
         </div>
     </div>
 
     <div class='feature-center'>
             <!-- Set the ciontent of this heder in js (temp) -->
-            <h1 class='feature-header margin-top-10 slate'>&deg;<span id='temp'></span>F</h1>
+            <h1 class='feature-header margin-top-10 slate font-lg text-font'>It's currently &deg;<span id='temp'></span>F outside!</h1>
     </div>
 
     <div class='weatherInfo margin-top-25'>
-        <ul class='list-clear center'>
+        <ul class='list-clear align-center'>
             <li class='list-item-h itemhh-20'><b>Wind Speed:</b> <span id='windSpeed'></span></li>
             <li class='list-item-h item-h-20'><b>Humidity:</b> <span id='humidity'></span></li>
             <li class='list-item-h item-h-20'><b>Visibility:</b> <span id='visibility'></span></li>
@@ -41,7 +42,7 @@
 
 
     <div class='footer'>
-        <h6>Made by This was made by <a href='http://jurikiin.com' class='footer-link'>Juri Kiin</a>. Visit my site for more!</h6>
+        <h6>Made by This was made by <a href='http://jurikiin.com' class='link'>Juri Kiin</a>. Visit my site for more!</h6>
     </div>
 
 
