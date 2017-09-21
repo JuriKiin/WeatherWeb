@@ -42,7 +42,7 @@
 
         
         var url = 'http://api.openweathermap.org/data/2.5/weather?' + "lat=" + location.lat + "&lon=" + location.lon
-            + '&appid=' + key ;
+            + '&appid=' + key + '&units=imperial';
 
         $.ajax({
             type:"GET",
@@ -63,10 +63,18 @@
     var loadData = function(data){
         console.log(data);
         //Setup some objects for reference.
-        var temp = data.main;
+        var main = data.main;
         var wind = data.wind;
         var visibility = data.visibility;
         var sunInfo = data.sys;
+
+        //Set main data
+        var temp = document.querySelector('#temp').innerHTML = parseInt(main.temp);
+        //Set secondary info
+        var wind = document.querySelector('#windSpeed').innerHTML = wind.speed + 'm/h';
+        var humidity = document.querySelector('#humidity').innerHTML = main.humidity + '%';
+        var uv = document.querySelector('#visibility').innerHTML = visibility + 'm';
+        var pressure = document.querySelector('#pressure').innerHTML = main.pressure + ' hPa';
     }
     
 }())
